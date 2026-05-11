@@ -1,20 +1,27 @@
-import React from "React";
+import React from "react";
 import imageAccueil from "../Images-Livres/Image-accueil-Desktop.png"
 import imageLogo  from "../Images-Logos-Menus/Logo-site-version2.png"
-
+import "./Home.css";
+import {Link}  from "react-router-dom"
 
 function Home () {
 
 return (
-<section>
-<section>
-<h1>Historical-library</h1>
-<h2>Liste des Livres</h2>
-<h2>Mes livres</h2>
-<img src={imageLogo}  alt="Logo Historical" />
+<section className="accueil">
+<section className= "Section1">
+<h1 className="Titre">Historical-library</h1>
+<section className="Section-sous-titres">
+<Link to="/liste-livres" className="lien-menu">
+<h2 className="sous-titre-un" >Liste des Livres</h2>
+</Link>
+<Link to="/mes-livres" className="lien-menu">
+<h2 className="sous-titre-deux">Mes livres</h2>
+</Link>
 </section>
-<section>
-<img src={imageAccueil} alt="Image d'accueil"/>
+<img src={imageLogo}  alt="Logo Historical" className ="Image-logo-menu"/>
+</section>
+<section className="Section-2">
+<img src={imageAccueil} alt="Image d'accueil" className="Image-accueil"/>
 </section>
 </section>
 );
