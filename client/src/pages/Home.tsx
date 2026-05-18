@@ -9,14 +9,19 @@ function Home () {
 return (
 <section className="accueil">
 <section className= "Section1">
+<section className= "Section-titre-library">
 <h1 className="Titre">Historical-library</h1>
 <section className="Section-sous-titres">
-<Link to="/liste-livres" className="lien-menu">
+
+<Link to="/liste-livres" className="lien-menu-1">
 <h2 className="sous-titre-un" >Liste des Livres</h2>
 </Link>
-<Link to="/mes-livres" className="lien-menu">
+<Link to="/mes-livres" className="lien-menu-2">
 <h2 className="sous-titre-deux">Mes livres</h2>
 </Link>
+
+
+</section>
 </section>
 <img src={imageLogo}  alt="Logo Historical" className ="Image-logo-menu"/>
 </section>
