@@ -9,6 +9,7 @@ const app = express();
 
 // Middleware : permet de lire les données JSON envoyées par le client
 // Sans ca, req.body serait undefined
+// app.use () permet de dire que j'utilise un middleware. (peut-être que ca veut dire que j'utilise plsuieurs middlewares.)
 app.use(express.json());
 
 //Route GET sur "/"
