@@ -44,7 +44,7 @@ Ils indiquent l’importance du titre.
 <section>
     <input type="text" size={5} />
     <input type="text"size={5} />
-    <button type="button">Conexion</button>
+    <button type="button">Connexion</button>
 </section>
 </section>
 

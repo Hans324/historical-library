@@ -1,15 +1,47 @@
+/*  Ce fichier Home.css contient des règles de style pour ton fichier Home.tsx.
+Chaque règle commence par un sélecteur (ex: .accueil, .Titre)
+ qui cible un élément spécifique dans ton HTML/JSX, puis définit comment il doit s’afficher (couleur, taille, position, etc.).   */
+
+
+ /*  1)Style de la section principale .accueil
+ La grande section .accueil (celle qui contient tout) a :
+
+background: #E2DCC5; → Un fond beige clair (comme un parchemin ancien).
+width: 100%; → Elle prend toute la largeur de l’écran.
+padding-bottom: 40%; → Un espace vide en bas (40% de la hauteur de la section) pour aérer la page."
+   */
 .accueil {
 
 background: #E2DCC5;
 width: 100%;
 padding-bottom: 40%;
 }
+/*2. Style de .Section1 (la première sous-section) 
+
+"La section .Section1 (qui contient le titre et les liens) :
+
+display: flex; → Ses enfants (titre, sous-titres, logo) sont alignés comme une colonne verticale (les uns sous les autres).
+flex-direction: column; → Confirme que l’alignement est vertical (par défaut, flex aligne horizontalement)."
+
+*/
+
 .Section1 {
 display:flex;
 flex-direction:column
 
-
 }
+
+/*  3. Style du titre .Titre
+
+   "Le titre Historical-library :
+
+font-size: 70px; → Une grosse taille de police (70 pixels).
+font-family: Arial, Helvetica, sans-serif; → Utilise la police Arial (ou Helvetica si Arial n’existe pas).
+text-align: center; → Le texte est centré horizontalement.
+margin-left: 4%; → Un petit décalage de 4% vers la droite (pour éviter qu’il soit collé au bord)."
+     */
+
+
 .Titre {
 
 font-size: 70px;
@@ -18,11 +50,32 @@ text-align: center;
 margin-left: 4%;
 }
 
+/* 4 Style de .Section-titre-library
+
+→ "La section qui contient le titre et les sous-titres a :
+
+margin-bottom: 5%; → Un espace de 5% en bas pour séparer visuellement du reste."
+
+    */
+
+
 .Section-titre-library {
 
 margin-bottom: 5%;
 }
 
+/* 5. Style de .Section-sous-titres (la section des liens) 
+
+"La section qui contient les deux liens (Liste des Livres et Mes livres) :
+
+display: flex; → Les liens sont alignés horizontalement (côte à côte).
+flex-direction: row; → Confirme l’alignement horizontal (par défaut pour flex).
+gap: 28%; → Un espace de 28% entre les deux liens.
+margin-left: 19%; → Décalage de 19% vers la droite (pour centrer les liens).
+align-items: flex-end; → Les liens sont alignés en bas de la section (pour éviter qu’ils ne soient étirés).
+font-family: Arial, Helvetica, sans-serif; → Police Arial pour le texte des liens."
+
+*/
 
 .Section-sous-titres{
 display: flex;
@@ -33,7 +86,19 @@ align-items: flex-end;
 font-family: Arial, Helvetica, sans-serif;
 
 }
+/* 6. Style des liens .lien-menu-1 et .lien-menu-2
+.lien-menu-1 (lien "Liste des Livres")
 
+→ "Le premier lien (Liste des Livres) :
+
+border: none; → Pas de bordure autour du lien.
+cursor: pointer; → Le curseur devient une main (👆) quand on survole le lien (pour indiquer qu’il est cliquable).
+border-radius: 8px; → Les coins sont légèrement arrondis (8 pixels).
+transition: 0.3s; → Les changements (comme la couleur au survol) se font en douceur sur 0.3 secondes.
+width: 20%; → Le lien prend 20% de la largeur de son conteneur.
+text-decoration: none; → Pas de soulignement sous le texte (comme un lien HTML classique)."
+
+ */ 
 
 
 .lien-menu-1 {
@@ -46,7 +111,15 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
  
 }
+/* Effet au survol (hover) pour .lien-menu-1
+→ "Quand on passe la souris sur le lien :
 
+background-color: #f3f7fe; → Le fond devient bleu très clair.
+color: black; → Le texte reste noir.
+text-decoration: none; → Toujours pas de soulignement."
+
+
+*/ 
  
 .lien-menu-1:hover {
 
@@ -55,18 +128,17 @@ font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
+/*  .lien-menu-2 (lien "Mes livres")
 
+→ "Le deuxième lien (Mes livres) :
 
+width: 12%; → Prend 12% de la largeur (plus petit que le premier lien).
+height: 72px; → Une hauteur fixe de 72 pixels.
+Le reste est similaire à .lien-menu-1 (curseur main, coins arrondis, transition douce, pas de soulignement)."
 
-
-
-
+*/
 
 .lien-menu-2 {
-
-
- 
-  
   border: none;
   cursor: pointer;
   border-radius: 8px;
@@ -75,9 +147,14 @@ font-family: Arial, Helvetica, sans-serif;
   transition: 0.3s;
 text-decoration: none;
 
-
-
 }
+
+/*  Effet au survol (hover) pour .lien-menu-2  
+
+ → Même effet que .lien-menu-1 (fond bleu clair, texte noir, pas de soulignement).  */
+
+
+
 
 .lien-menu-2:hover {
 
@@ -87,6 +164,22 @@ text-decoration: none;
 }
 
 
+
+/* 7. Style des sous-titres (.sous-titre-un et .sous-titre-deux)
+.sous-titre-un (texte "Liste des Livres")
+
+
+→ "Le texte Liste des Livres :
+
+font-size: larger; → Taille de police plus grande que la normale.
+margin: 15%; → Un espace de 15% autour du texte (remplace le margin: 10% précédent).
+padding-bottom: -1%; → Réduit légèrement l’espace en bas (pour serrer le texte)."
+
+
+
+
+*/
+
 .sous-titre-un {
 font-family: Arial, Helvetica, sans-serif;
 font-size: larger;
@@ -94,6 +187,16 @@ margin: 10%;
 padding-bottom:-1% ;
 margin: 15%;
 }
+
+/*  .sous-titre-deux (texte "Mes livres")
+
+→ "Le texte Mes livres :
+
+padding: 7%; → Espace intérieur de 7% autour du texte.
+height: 35%; → Hauteur de 35% de son conteneur.
+padding-bottom: 5%; → Espace en bas de 5%.
+text-align: center; → Texte centré horizontalement."
+*/
 .sous-titre-deux {
 
 font-family: Arial, Helvetica, sans-serif;
@@ -102,9 +205,22 @@ padding:7%;
 height:35%;
 padding-bottom:5% ;
 text-align: center;
-
-
 }
+
+
+/*   .Image-logo-menu (le logo)
+
+→ "Le logo :
+
+width: 16%; → Largeur de 16% de son conteneur.
+margin-left: 44%; → Décalage de 44% vers la droite (pour le centrer).
+margin-bottom: 10%; → Espace de 10% en bas.
+margin-top: -12%; → Remonte le logo de 12% (pour le rapprocher du titre)."
+
+
+*/
+
+
 
 .Image-logo-menu {
 
@@ -115,12 +231,37 @@ text-align: center;
     margin-top: -12%;
 }
 
+/*  .Image-accueil (l’image d’accueil)
+
+    width: 90%; → Largeur de 90% de son conteneur.
+margin-top: -8%; → Remonte l’image de 8% (pour réduire l’espace avec la section du haut)."
+*/
 .Image-accueil{
 
 width:90%;
 margin-top: -8%;
 }
 
+
+
+/*   → "Si l’écran est plus petit que 400px (ex: un téléphone) :
+
+.Titre :
+
+font-size: 5vh; → Taille du titre en 5% de la hauteur de l’écran (pour qu’il reste lisible).
+margin-left: 5%; et margin-top: 23%; → Décalages ajustés pour éviter que le titre ne soit trop collé aux bords.
+
+.Section1 : Reste en colonne verticale (comme avant).
+.lien-menu-1 :
+
+width: 16%; → Largeur réduite.
+margin-right: 20%; et margin-left: -2%; → Ajustement des marges pour centrer le lien.
+padding-left: 3%; → Espace intérieur à gauche.
+
+.sous-titre-un : margin-left: 3%; → Décalage réduit.
+.Image-logo-menu : Garde margin-bottom: 10%; (pas de changement).
+.Image-accueil : margin-left: 5%; → Décalage à gauche pour centrer l’image."
+     */
 
 @media (max-width: 400px) {
 .Titre {
@@ -160,3 +301,42 @@ margin-left: 3%;
  
   margin-left: 5%;
 }
+
+
+/*    
+
+📊 Résumé visuel de la page
+Voici à quoi ressemble ta page grâce à ce CSS :
+
+Fond beige (#E2DCC5) pour toute la page.
+Titre "Historical-library" :
+
+Gros (70px), centré, police Arial.
+
+Deux liens ("Liste des Livres" et "Mes livres") :
+
+Côte à côte, avec un grand espace entre eux (gap: 28%).
+Au survol : fond bleu clair (#f3f7fe).
+
+Logo :
+
+Centré, légèrement remonté pour être proche du titre.
+
+Image d’accueil :
+
+Large (90% de la largeur), légèrement remontée.
+
+Sur mobile :
+
+Le titre devient plus petit (5vh).
+Les liens et images sont repositionnés pour s’adapter à un petit écran.
+
+
+💡 Analogies pour mieux comprendre
+
+display: flex; → Comme une étagère : tu peux aligner tes objets (éléments) horizontalement (row) ou verticalement (column).
+margin → Espace extérieur autour d’un meuble (pour ne pas qu’il soit collé au mur).
+padding → Espace intérieur dans un meuble (pour ranger tes affaires sans qu’elles ne touchent les bords).
+@media → Comme un costume sur mesure : tu ajustes les vêtements (styles) en fonction de la taille de la personne (écran).
+
+*/
