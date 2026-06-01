@@ -10,6 +10,10 @@ background: #E2DCC5; → Un fond beige clair (comme un parchemin ancien).
 width: 100%; → Elle prend toute la largeur de l’écran.
 padding-bottom: 40%; → Un espace vide en bas (40% de la hauteur de la section) pour aérer la page."
    */
+
+   /* ==========================================================================
+   STYLE PAR DÉFAUT (DESKTOP / GRANDS ÉCRANS)
+   ========================================================================== */
 .accueil {
 
 background: #E2DCC5;
@@ -225,7 +229,7 @@ margin-top: -12%; → Remonte le logo de 12% (pour le rapprocher du titre)."
 .Image-logo-menu {
 
  
-    width: 16%;
+    width: 16%;;
     margin-left: 44%;
     margin-bottom:10%;
     margin-top: -12%;
@@ -263,6 +267,12 @@ padding-left: 3%; → Espace intérieur à gauche.
 .Image-accueil : margin-left: 5%; → Décalage à gauche pour centrer l’image."
      */
 
+/* ==========================================================================
+   STYLE MOBILE (S'applique UNIQUEMENT si l'écran fait moins de 400px)
+   ========================================================================== */
+
+
+
 @media (max-width: 400px) {
 .Titre {
 font-size: 5vh;
@@ -278,7 +288,7 @@ margin-top: 23%;
 
 
 
-}
+
 .lien-menu-1 {
 width:16%;
   margin-right: 20%;
@@ -341,3 +351,4 @@ padding → Espace intérieur dans un meuble (pour ranger tes affaires sans qu�
 @media → Comme un costume sur mesure : tu ajustes les vêtements (styles) en fonction de la taille de la personne (écran).
 
 */
+}
