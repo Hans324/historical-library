@@ -1,1 +1,60 @@
 
+
+.Menu-bouton-position {
+
+display: flex;
+flex-direction: row;
+
+}
+
+.Menu-version-desktop {
+
+width:35%;
+margin-top:1%;
+margin-left: 1%;
+}
+.bouton-connexion {
+
+    margin-left: 70%;
+}
+.button {
+
+color: white;
+background-color: #035A8C;
+border-radius:5px;
+width:10vh;
+font-family: Arial, Helvetica, sans-serif;
+height:25%;
+}
+
+
+@media (max-width: 768px) {
+.Menu-bouton-position {
+display: flex;
+flex-direction: row;
+
+
+}
+
+.Menumobile {
+
+width: 50%;
+margin-top: -4%;
+}
+
+
+
+.bouton-connexion {
+
+    margin-left: 45%;
+}
+.button {
+color: white;
+background-color: #035A8C;
+border-radius:5px;
+width:12vh;
+font-family: Arial, Helvetica, sans-serif;
+height:55%;
+
+}
+}

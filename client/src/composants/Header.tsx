@@ -115,7 +115,7 @@ return (
 */}
 <section className="bouton-connexion">
 
-<button className="Blue button" type="button">Connexion</button>
+<button className="button" type="button">Connexion</button>
 </section>
 
 </section>
