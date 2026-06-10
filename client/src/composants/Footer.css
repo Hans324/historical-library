@@ -1,0 +1,54 @@
+
+@media(max-width: 768px) {
+.Footer {
+background-color: #035A8C;
+color: white;
+width:100%;
+max-width:100%;
+}
+.Logos{
+display: flex;
+flex-direction: row;
+padding:10%;
+
+}
+.Image-logo-Facebook  {
+
+width:50px;
+margin-left: 4%;
+
+
+}
+
+.Image-logo-YouTube {
+width:50px;
+margin-left: 10%;
+}
+
+.Image-logo-Twitter {
+
+width:50px;
+margin-left: 10%;
+}
+
+.Image-logo-Instagram {
+
+width:50px;
+margin-left: 10%;
+
+}
+
+
+.Services {
+
+display: flex;
+flex-direction: column;
+
+
+}
+.all-rights-reserved {
+text-align: center;
+height:90px;
+
+}
+}
