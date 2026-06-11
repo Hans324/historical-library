@@ -20,11 +20,11 @@ return (
 <img src={Instagram}  alt="Logo Historical" className="Image-logo-Instagram"/>
 </section>
 <section className='Services'>
-<h3>HOME</h3>
-<h3>SERVICES</h3>
-<h3>TERMS</h3>
-<h3>ABOUT</h3>
-<h3>PRIVACY POLICY</h3>
+<h3 className='Home'>HOME</h3>
+<h3 className='Service'>SERVICES</h3>
+<h3 className='Term'>TERMS</h3>
+<h3 className='about'>ABOUT</h3>
+<h3 className='Privacy-police'>PRIVACY POLICY</h3>
 
 </section>
 <section className='all-rights-reserved'>

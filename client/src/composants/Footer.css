@@ -1,3 +1,88 @@
+.Footer {
+
+
+background-color: #035A8C;
+color: white;
+width:100%;
+height: 40vh;
+}
+
+.Logos {
+display: flex;
+flex-direction:row;
+padding-top: 5%;
+justify-content: center;
+margin-right: 1%;
+}
+
+
+.Image-logo-Facebook{
+
+width:100px;
+margin-left: 5%;
+}
+.Image-logo-YouTube {
+width:100px;
+margin-left:5%;
+}
+.Image-logo-Twitter {
+
+width:100px;
+margin-left: 5%;
+}
+
+.Image-logo-Instagram {
+
+width:100px;
+margin-left: 5%;
+
+
+}
+
+.Services {
+
+display: flex;
+flex-direction: row;
+padding:10%;
+justify-content: center;
+margin-left: 3%;
+height: -10%;
+padding-top: 3%;
+padding-bottom: 2%;
+padding-right: 2%;
+
+}
+
+
+
+.all-rights-reserved {
+text-align: center;
+height: -10%;
+
+}
+
+.Home {
+margin-right:10%;
+
+}
+.Service {
+margin-right:10%
+
+}
+.Term {
+margin-right:10%;
+
+}
+
+.about {
+margin-right:10%
+
+}
+.Privacy-police{
+
+  margin-right: 10%;  
+  text-align: center;
+}
 
 @media(max-width: 768px) {
 .Footer {
