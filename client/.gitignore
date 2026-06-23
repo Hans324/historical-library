@@ -22,3 +22,25 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Variables d'environnement
+# Ignore les fichiers contenant les configurations privées (clés API, URLs privées, secrets...)
+.env
+
+# Ignore les variantes des fichiers d'environnement (.env.local, .env.production, etc.)
+.env.*
+
+# Autorise les fichiers modèles qui expliquent les variables nécessaires
+!.env.sample
+
+
+# En fait tu crées les fichiers gitignore et tu mets les fichiers que tu veux pas qu'ils soient sauvegarder.
+# D'ou le nom du fichier gitignore :git ignore
+
+#En termes très simples :
+#Git regarde ton projet.
+#Il voit les fichiers.
+#Il ajoute normalement tout ce que tu lui demandes avec git add.
+#Le fichier .gitignore lui dit : "ces fichiers-là, ne les prends pas en compte."
+#Donc oui, tu écris dedans les fichiers ou dossiers que tu ne veux pas envoyer sur GitHub.
