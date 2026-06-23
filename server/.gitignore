@@ -1,0 +1,44 @@
+# variables d'environnement
+
+# Ignore les fichiers contenant des informations sensibles de configuration
+
+.env 
+#Ignore le fichier réel qui contient les secrets
+
+
+
+# Ignore tous les fichiers qui commencent par .env (ex: .env.dev, .env.production)
+
+.env .*
+
+#Ignore les variantes comme .env.local, .env.production
+
+
+
+# Autorise uniquement les fichiers modèles qui expliquent quelles variables sont nécessaires
+
+!.env.sample
+
+#Autorise le fichier exemple à être envoyé sur GitHub
+
+
+
+# Une variable d'environnement est une information de configuration que ton application utilise, 
+# mais que tu ne veux généralement pas écrire directement dans ton code. 
+# Imagine que ton application a besoin de connaître :
+# le mot de passe de ta base de données
+# une clé d'API
+# un secret pour sécuriser les connexions
+# l'adresse d'un serveur externe
+# un mode de fonctionnement (development, production, etc.)
+
+# Au lieu de faire ça dans ton code :
+# const password = "MonSuperMotDePasse123";
+# Tu fais :
+# const password = process.env.DB_PASSWORD;
+# Et la vraie valeur est stockée ailleurs dans un fichier .env.
+# Pourquoi ?
+
+#Sécurité : tes mots de passe et clés privées ne partent pas sur GitHub.
+#⚙️ Flexibilité : tu peux avoir des valeurs différentes selon ton ordinateur, ton serveur de production, tes tests...
+#👥 Travail en équipe : chaque développeur met ses propres valeurs sans modifier le code.
