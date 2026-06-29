@@ -1,3 +1,5 @@
+import React from 'react'
+
 /*   C’est le point de départ de ton application React. Il dit à ton navigateur :
 "Prépare-toi à afficher mon application React, et commence par charger le composant App."
          */
@@ -12,11 +14,14 @@ createRoot : Une fonction qui permet de dire à React :
 */
 import './index.css' /* 
 Charge (j'importe) le fichier index.css pour appliquer des styles (couleurs, polices, etc.) à ton application.  */
-import App from './App.jsx'
+import App from './App.js'
 /*  Charge le composant App depuis le fichier App.jsx. 
 C’est le composant principal de ton application (celui qui contient toute ta logique et ton interface).   */ 
 
-createRoot(document.getElementById('root')).render(
+import { RouterProvider, createBrowserRouter } from "react-router";
+
+
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
