@@ -1,16 +1,17 @@
 import React from "react"; // 1) Importe la bibliothèque React (obligatoire pour créer des composants)
+import {Outlet} from "react-router-dom"
 import Footer from "./Footer";  // 2️) Importe le composant Footer depuis le dossier "composants"
 import Header from "./Header"
 
 // 3️) Déclare un composant appelé "Layout" qui accepte un paramètre "children" (le contenu dynamique)
-export function Layout({ children }) {
+export function Layout({}) {
   return ( // 4️) Commence à retourner le code JSX (ce qui sera affiché à l'écran)
     
     // 5️) Ouvre un "Fragment" (une boîte invisible pour regrouper plusieurs éléments sans ajouter de balise HTML)
      <> 
      
       <Header/>
-      {children}  
+      <Outlet /> 
       <Footer />   
 
        
