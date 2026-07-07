@@ -16,9 +16,6 @@ Link permet de naviguer  entre les pages..... sans recharger la page d'un site, 
 Il s'occupe de la navigation entre les pages dans une application web.*/
 
 
-import Liste from "../pages/Liste"
-import Livre from "../pages/Livre"
-
 function Home () {
 /* Rappel : Une fonction est un morceau de code..qui fais une action..en bref..c'est un morceau de code qui va executer une action.
 
@@ -39,10 +36,10 @@ En gros :"voici ce que je veux afficher dans le site.*/
 <h1 className="Titre">Historical-library</h1>
 <section className="Section-sous-titres">
 
-<Link to="/liste" className="lien-menu-1">
+<Link to="/Liste" className="lien-menu-1">
 <h2 className="sous-titre-un" >Liste des Livres</h2>
 </Link>
-<Link to="/livre" className="lien-menu-2">
+<Link to="/Livre" className="lien-menu-2">
 <h2 className="sous-titre-deux">Mes livres</h2>
 </Link>
 
