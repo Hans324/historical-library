@@ -13,7 +13,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import "./Header.css" //Importe le fichier CSS pour ce composant
 
-import Connexion from '../pages/Connexion'
+
 import {Link}  from "react-router-dom"
 function Header() {
 
@@ -115,7 +115,7 @@ return (
 
 */}
 <section className="bouton-connexion">
-<Link to ="../pages/Connexion">
+<Link to ="/connexion">
 <button className="button" type="button">Connexion</button>
 </Link>
 </section>

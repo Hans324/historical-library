@@ -1,0 +1,152 @@
+
+
+.connexion{
+
+display: flex;
+flex-direction: column;
+
+}
+
+.Se-Connectez{
+
+display: flex;
+flex-direction: column;
+background-color:  white;
+width: 50%;
+margin-left: 20%;
+margin-bottom: 15%;
+bottom:10%;
+}
+
+.Title-1 {
+text-align: center;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+.Email-1 {
+font-weight: bold;
+margin-left: 20%;     
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.type-email-1 {
+margin-left: 20%;
+width:50%;
+background-color: #F9F9F9;
+border-radius: 5%;
+
+}
+
+.Mot-de-Passe-1{
+
+font-weight: bold;
+margin-left: 20%;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.type-password-1{
+width:50%;
+margin-left: 20%;
+background-color: #F9F9F9;
+border-radius: 5%;
+
+}
+
+
+
+
+.button-1 {
+
+color: white;
+background-color: #035A8C;
+width:25%;
+margin-left: 35%;
+margin-bottom: 4%;
+margin-top: 3%;
+border-radius: 5%;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.Creation-de-Compte{
+
+background-color: white;
+display: flex;
+flex-direction: column;
+width:50%;
+margin-left: 20%;
+margin-bottom:10%;
+
+}
+.Title-2{
+    text-align: center;
+}
+.Email-2{
+
+font-weight:bold;
+margin-left: 20%;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+.type-email-2{
+margin-left: 20%;
+width:50%;
+background-color: #F9F9F9;
+border-radius: 5%;
+}
+.type-password-2{
+margin-left: 20%;
+width:50%;
+background-color: #F9F9F9;
+border-radius: 5%;
+}
+
+.type-firstname{
+margin-left: 20%;
+width:50%;
+background-color: #F9F9F9;
+border-radius: 5%;
+}
+
+
+.Mot-de-Passe-2{
+margin-left: 20%;
+font-weight: bold;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.Prenom-2{
+
+font-weight: bold;
+margin-left: 20%;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+.Nom-de-Famille-2{
+margin-left: 20%;
+font-weight: bold;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+.type-lastname{
+width:50%;
+margin-left:20%;
+background-color: #F9F9F9;
+border-radius: 5%;
+}
+
+.button-2{
+
+color: white;
+background-color:  #035A8C;
+width:25%;
+margin-left:35%;
+margin-bottom: 5%;
+margin-top: 4%;
+border-radius: 5%;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}

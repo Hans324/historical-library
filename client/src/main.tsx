@@ -30,7 +30,7 @@ C’est le composant principal de ton application (celui qui contient toute ta l
 import Home from "./pages/Home";
 import Liste from "./pages/Liste";
 import Livre from "./pages/Livre";
-import Connexion from '../Connexion';
+import Connexion from "./pages/Connexion";
 
 
 
